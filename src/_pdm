@@ -1,7 +1,7 @@
 #compdef pdm
 
-PDM_PYTHON="/home/tbaur/.asdf/installs/pdm/2.1.4/venv/bin/python"
-PDM_PIP_INDEXES=($(command ${PDM_PYTHON} -m pdm config pypi.url))
+
+PDM_PIP_INDEXES=($(command pdm config pypi.url))
 
 _pdm() {
   emulate -L zsh -o extended_glob
